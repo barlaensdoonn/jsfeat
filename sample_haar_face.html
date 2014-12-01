@@ -103,7 +103,7 @@
                 ctx = canvas.getContext('2d');
 
                 ctx.fillStyle = "rgb(255,255,255)";
-                ctx.strokeStyle = "rgb(255,255,255)";
+                ctx.strokeStyle = "rgb(200,200,200)";
 
                 var scale = Math.min(max_work_size/videoWidth, max_work_size/videoHeight);
                 var w = (videoWidth*scale)|0;
@@ -183,6 +183,7 @@
                 for(var i = 0; i < n; ++i) {
                     r = rects[i];
                     ctx.fillRect((r.x*sc)|0,(r.y*sc)|0,(r.width*sc)|0,(r.height*sc)|0);
+                    ctx.strokeRect((r.x*sc)|0,(r.y*sc)|0,(r.width*sc)|0,(r.height*sc)|0);
                 }
             }
 
