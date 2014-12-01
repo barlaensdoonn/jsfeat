@@ -121,7 +121,7 @@
                 ii_tilted = new Int32Array((w+1)*(h+1));
                 ii_canny = new Int32Array((w+1)*(h+1));
 
-                //options = new demo_opt();
+                options = new demo_opt();
                 //gui = new dat.GUI();
 
                 //gui.add(options, 'min_scale', 1, 4).step(0.1);
@@ -183,7 +183,7 @@
                 var r;
                 for(var i = 0; i < n; ++i) {
                     r = rects[i];
-                    ctx.strokeRect((r.x*sc)|0,(r.y*sc)|0,(r.width*sc)|0,(r.height*sc)|0);
+                    ctx.fillRect((r.x*sc)|0,(r.y*sc)|0,(r.width*sc)|0,(r.height*sc)|0);
                 }
             }
 
